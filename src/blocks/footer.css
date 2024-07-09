@@ -1,0 +1,25 @@
+.footer {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    left: 531px;
+    background-color: black;
+}
+@media screen and (min-width:768px) and (max-width: 1280px) {
+    .footer {
+      width: 100%;
+    }
+}
+@media screen and (min-width:00px) and (max-width: 768px) {
+    .footer {
+        width: 100%;
+      }
+}
+.footer__author {
+  max-width: 191px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  color: white;
+}

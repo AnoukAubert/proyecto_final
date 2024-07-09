@@ -1,0 +1,200 @@
+.article {
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    font-family: 'Inter';
+    font-style: normal;
+    display: grid;
+    grid-template-columns: repeat(2, 45%);
+    grid-template-rows: repeat(3, auto);
+    padding-top: 50px;
+    padding-bottom: 50px;
+    column-gap: 24px;
+}
+@media screen and (min-width:768px) and (max-width: 1280px) {
+    .article {
+      width: 100vw;
+      display: grid;
+      grid-template-columns: repeat(2, 45%);
+      grid-template-rows: repeat(3, auto);
+      column-gap: 16px;
+}
+}
+@media screen and (min-width: 0px) and (max-width: 768px) {
+    .article {
+      width: 100vw;
+      display: flex;
+      flex-direction: column;
+    }
+}
+.article__button {
+  max-width: 355px;
+  height: 48px;
+  background: #0278FE;
+  border-radius: 4px;
+  border: none;
+  color: white;
+  width: 355px;
+  left: 148px;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 22px;
+  margin-left: 500px;
+  margin-top: -55px;
+  cursor: pointer;
+}
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+  .article__button {
+    width: 315px;
+    font-weight: 600;
+    left: 24px;
+    font-size: 14px;
+    line-height: 1px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .article__button {
+    width: 315px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1px;
+    margin-left: 48px;
+    margin-top: 48px;
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 320px) {
+.article__button {
+  width: 95%;
+  font-weight: 600;
+  font-size: 14px;
+}
+}
+.article__name {
+  align-self: self-start;
+  width: 456px;
+  left: 648px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 48px;
+  grid-column: 2;
+  grid-row: 2;
+}
+@media screen and (min-width:768px) and (max-width: 1280px) {
+  .article__name {
+    width: 100%;
+    left: 648px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 48px;
+    grid-column: 2;
+    grid-row: 2;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .article__name {
+    width: 100%;
+    left: 392px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    grid-column: 2;
+    grid-row: 2;
+  }
+}
+@media screen and (max-width: 320px) {
+  .article__name {
+    width: 100%;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+  }
+}
+.article__paragraph {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  left: 648px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 29px;
+  grid-column: 2;  
+}
+@media screen and (min-width:768px) and (max-width: 1280px) {
+  .article__paragraph {
+    left: 392px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 163%;
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 768px) {
+  .article__paragraph {
+    left: 16px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 163%;
+  }
+}
+.article__picture {
+  width: 460px;
+  left: 148px;
+  grid-column: 1;
+  grid-row: 2;
+  cursor: pointer;
+}
+@media screen and (min-width:0px) and (max-width: 1280px) {
+    .article__picture {
+      width: 100%;
+    }
+}
+/* .article__subtitle {
+  align-self:self-end;
+  width: 58px;
+  letter-spacing: 0.12em;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #AAA;
+  left: 648px;
+  grid-column: 2;
+  grid-row: 1;
+}
+@media screen and (min-width:768px) and (max-width: 1280px){
+  .article__subtitle {
+    left: 392px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .article__subtitle {
+    left: 16px;
+  }
+} */
+.article__title {
+  width: 460px;
+  font-weight: 900;
+  left: 148px;
+  font-size: 72px;
+  line-height: 76px;
+  grid-column: 1;
+  grid-row: 1;
+}
+@media screen and (min-width:768px) and (max-width: 1280px) {
+  .article__title {
+    width: 100%;
+    left: 24px;
+    font-size: 42px;
+    line-height: 46px;
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 768px) {
+  .article__title {
+    width: 100%;
+    left: 16px;
+    font-size: 32px;
+    line-height: 35px;      
+  }
+}

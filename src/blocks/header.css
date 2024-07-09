@@ -1,0 +1,124 @@
+.header {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-items: center;
+    padding-top: 40px;
+    background-color: black;
+    color: white;
+    }
+@media screen and (min-width:768px) and (max-width: 1280px) {
+    .header {
+      width: 100%;
+    }
+}
+@media screen and (min-width:0px) and (max-width: 768px) {
+    .header {
+      width: 100%;
+    }
+
+}
+.header__logo {
+  max-width: 270px;
+  top: 34px;
+  width: 7%;
+  left: 505px;
+  border-radius: 10%;
+}
+@media screen and (min-width:768px) and (max-width: 1280px) {
+  .header__logo {
+    left: 249px;
+  }
+}
+@media screen and (min-width:320px) and (max-width: 768px) {
+  .header__logo {
+    left: 60px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .header__logo {
+    width: 75%;
+    left: 60px;
+  }
+}
+.header__main-ilustration {
+  max-width: 984px;
+  filter: gray;
+  filter: grayscale(1);
+  cursor: pointer;
+}
+@media screen and (min-width:768px) and (max-width: 1280px) {
+  .header__main-ilustration {
+    width: 80%;
+    left: 148px;
+  }
+}
+@media screen and (min-width:00px) and (max-width: 768px) {
+  .header__main-ilustration {
+    width: 100%;
+    left: 0px;
+  }
+}
+.header__subtitle {
+  max-width: 720px;
+  font-size: 30px;
+  text-align: center;
+  font-weight: 400;
+  left: 280px;
+  line-height: 36px;
+}
+@media screen and (min-width:768px) and (max-width: 1280px) {
+  .header__subtitle {
+    width: 100%;
+    left: 24px;
+    font-size: 30px;
+    line-height: 36px;
+  }
+}
+@media screen and (min-width:320px) and (max-width: 768px) {
+  .header__subtitle {
+    width: 288px;
+    left: 16px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .header__subtitle {
+    width: 80%;
+    left: 16px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+.header__title {
+  max-width: 793px;
+  font-size: 96px;
+  text-align: center;
+  font-weight: 900;
+}
+@media screen and (min-width:768px) and (max-width: 1280px) {
+  .header__title {
+    width: 100%;
+    left: 24px;
+    font-size: 96px;
+    line-height: 100px;
+  }
+}
+@media screen and (min-width:320px) and (max-width: 768px) {
+  .header__title {
+    width: 288px;
+    left: 16px;
+    font-size: 40px;
+    line-height: 44px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .header__title {
+    width: 80%;
+    left: 16px;
+    font-size: 40px;
+    line-height: 44px;
+  }
+}
