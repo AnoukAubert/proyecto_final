@@ -1,4 +1,5 @@
 import React from "react";
+import { Switch, Route } from "react-router-dom";
 import './App.css';
 import './index.css';
 import './utils/apiMovies';
@@ -18,7 +19,7 @@ function App() {
   React.useEffect(() => {
       //mandas llamar el api y en then guardas las tarjetas en setcards
       api.getPopular().then(data => {
-        console.log(data);
+        console.log(data)
         setCards(data.results)
       })
   }, [])
@@ -40,11 +41,14 @@ function App() {
     <div className="app">
     <Navigation />
     <Header />
+    <Switch>
+      <Route path="/home">
     <Main 
     handleZoomClick={handleZoomClick}
     cards={cards}
     />
-
+    </Route>
+    </Switch>
     <Footer />
     <ImagePopup
             selectedCard={selectedCard}

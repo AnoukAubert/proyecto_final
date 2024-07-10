@@ -15,6 +15,14 @@ class ApiMovie{
           },
         }).then((response) => response.json());
       }
+
+      getPopular() {
+        return fetch(`${this._url}now_playing?api_key=${this._token}`, {
+          headers: {         
+            "Content-Type": "application/json",
+          },
+        }).then((response) => response.json());
+      }
 }
 const api = new ApiMovie(
   "https://api.themoviedb.org/3/movie/",     // creo que es asi, puede que sea hasta el numero y no todo
