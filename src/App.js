@@ -4,14 +4,24 @@ import './index.css';
 import './utils/apiMovies';
 import Header from "./components/Header";
 import Main from "./components/Main";
+import Navigation from "./components/Navigation";
 import Footer from "./components/Footer";
 import ImagePopup from "./components/ImagePopup";
+import api from "./utils/apiMovies.js"
 
 function App() {
 
   const [cards, setCards] = React.useState([]);
   const [selectedCard, setSelectedCard] = React.useState([]);
-  const [openPopupZoom, setOpenPopupZoom] = React.useState([]);
+  const [openPopupZoom, setOpenPopupZoom] = React.useState(false);
+
+  React.useEffect(() => {
+      //mandas llamar el api y en then guardas las tarjetas en setcards
+      api.getPopular().then(data => {
+        console.log(data);
+        setCards(data.results)
+      })
+  }, [])
 
   const closePopup = () => {
     setOpenPopupZoom(false);
@@ -28,7 +38,7 @@ function App() {
   return (
     <>
     <div className="app">
-   
+    <Navigation />
     <Header />
     <Main 
     handleZoomClick={handleZoomClick}

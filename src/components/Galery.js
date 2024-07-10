@@ -11,8 +11,8 @@ export default function Galery({handleZoomClick, cards}) {
                 key={index}
                 handleClick={handleZoomClick}
                 card={item}
-                name={item.name} //¿como puedo hacer para que al clickear en name redireccione a Article?
-                link={item.link}
+                name={item.title} //¿como puedo hacer para que al clickear en name redireccione a Article?
+                link={item.poster_path}
               />
             );
           })}

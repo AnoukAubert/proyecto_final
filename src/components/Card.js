@@ -11,10 +11,10 @@ export default function Card({
       <div className="movie__card">
         <img
           onClick={() => {
-            handleClick(name, link);      //esto seria el popup (zoom)  --title redirecciona a Article-->
+            handleClick(name, `https://image.tmdb.org/t/p/w220_and_h330_face${link}`);      //esto seria el popup (zoom)  --title redirecciona a Article-->
           }}
           className="movie__image"
-          src={link}
+          src={`https://image.tmdb.org/t/p/w220_and_h330_face${link}`}
           alt={name}
         />
         

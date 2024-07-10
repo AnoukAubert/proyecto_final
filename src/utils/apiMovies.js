@@ -8,10 +8,9 @@ class ApiMovie{
         this._token = `Bearer ${token}`;
     }
 
-    getCards() {
-        return fetch(`${this._url}/cards`, {
-          headers: {
-            authorization: this._token,
+    getPopular() {
+        return fetch(`${this._url}popular?api_key=${this._token}`, {
+          headers: {         
             "Content-Type": "application/json",
           },
         }).then((response) => response.json());

@@ -1,4 +1,4 @@
-export default function Popup ({ open }) {
+export default function Popup ({ open, close, selectedCard }) {
     return (
         <>
         <section className={`zoom ${open ? 'zoom__open' : ''}`}>

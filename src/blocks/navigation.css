@@ -3,26 +3,38 @@
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #333;               /*CSS de prueba*/
-}
-
-.navigation__list {
+    height: 30px;
+    background-color: #000; 
+    background-image: linear-gradient(to top, #9795f0 0%, #fbc8d4 100%);
+    z-index: 100; 
+  }
+  
+  .navigation__list {
     display: flex;
+    justify-content: center;
     list-style: none;
     padding: 0;
     margin: 0;
-}
-
-.navigation__item {
-    margin-right: 10px;
-}
-
-.navigation__link {
+  }
+ 
+  .navigation__item {
+    margin-right: 2rem; 
+    text-align: center;
+  }
+  
+  .navigation__link {
     text-decoration: none;
-    color: white;
-    padding: 10px;
-}
-
-.navigation__link:hover {
-    background-color: #555;
+    color: #fff; /* Color del texto */
+    font-weight: bold;
+    transition: color 0.3s ease; /* Efecto de transición al pasar el ratón */
+  }
+  
+  .navigation__link:hover {
+    color: #ff9900; /* Cambia el color al pasar el ratón */
+  }
+  
+  @media screen and (min-width: 0px) and (max-width: 768px) {
+    .navigation__link {
+    font-size: 50%;
+    }
 }
