@@ -19,7 +19,15 @@ function App() {
   React.useEffect(() => {
       //mandas llamar el api y en then guardas las tarjetas en setcards
       api.getPopular().then(data => {
-        console.log(data)
+        setCards(data.results)
+      })
+      api.getNowPlaying().then(data => {
+        setCards(data.results)
+      })
+      api.getUpcoming().then(data => {
+        setCards(data.results)
+      })
+      api.getTopRated().then(data => {
         setCards(data.results)
       })
   }, [])
@@ -42,7 +50,7 @@ function App() {
     <Navigation />
     <Header />
     <Switch>
-      <Route path="/home">
+      <Route path="/">
     <Main 
     handleZoomClick={handleZoomClick}
     cards={cards}

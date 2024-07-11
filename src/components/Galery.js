@@ -17,6 +17,7 @@ export default function Galery({handleZoomClick, cards}) {
                 card={item}
                 name={item.title} //¿como puedo hacer para que al clickear en name redireccione a Article?
                 link={item.poster_path}
+                overview={item.overview}
               />
               </Route>
               </Switch>

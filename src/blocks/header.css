@@ -46,7 +46,7 @@
   max-width: 984px;
   filter: gray;
   filter: grayscale(1);
-  cursor: pointer;
+  transition: box-shadow 0.3s ease;
 }
 @media screen and (min-width:768px) and (max-width: 1280px) {
   .header__main-ilustration {
@@ -59,6 +59,9 @@
     width: 100%;
     left: 0px;
   }
+}
+.header__main-ilustration:hover {
+  box-shadow: 0 0 20px #9795f0;
 }
 .header__subtitle {
   max-width: 720px;

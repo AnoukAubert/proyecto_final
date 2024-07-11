@@ -2,34 +2,41 @@ import React from "react";
 import { Route, Link } from "react-router-dom";
 
 export default function Navigation({}) {
-    
+  const [linknContent, setLinkContent] = React.useState();
+  const getApiValues = {};
+  const handleSubmit = (evt) => { 
+    evt.preventDefault();
+    handleSubmit(getApiValues()).finally(() => {
+      setLinkContent();
+     });
+   }
   return (
     <>
     <Route>
-      <nav class="navigation">
-        <ul class="navigation__list">
-          <li class="navigation__item">
-            <Link path="/" class="navigation__link">
+      <nav className="navigation">
+        <ul className="navigation__list">
+          <li className="navigation__item">
+            <Link to="/" className="navigation__link" handleSubmit={linknContent}>
               Inicio
             </Link>
           </li>
-          <li class="navigation__item">
-            <Link path="/now-playing" class="navigation__link">
+          <li className="navigation__item">
+            <Link to="/now-playing" className="navigation__link" handleSubmit={linknContent}>
               Ahora en Cines
             </Link>
           </li>
-          <li class="navigation__item">
-            <Link path="/popular" class="navigation__link">
+          <li className="navigation__item">
+            <Link to="/popular" className="navigation__link" handleSubmit={linknContent}>
               Popular
             </Link>
           </li>
-          <li class="navigation__item">
-            <Link path="/top-rated" class="navigation__link">
+          <li className="navigation__item">
+            <Link to="/top-rated" className="navigation__link" handleSubmit={linknContent}>
               Los Más Valorados
             </Link>
           </li>
-          <li class="navigation__item">
-            <Link path="/upcoming" class="navigation__link">
+          <li className="navigation__item">
+            <Link to="/upcoming" className="navigation__link" handleSubmit={linknContent}>
               Proximamente
             </Link>
           </li>

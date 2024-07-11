@@ -16,8 +16,24 @@ class ApiMovie{
         }).then((response) => response.json());
       }
 
-      getPopular() {
+      getNowPlaying() {
         return fetch(`${this._url}now_playing?api_key=${this._token}`, {
+          headers: {         
+            "Content-Type": "application/json",
+          },
+        }).then((response) => response.json());
+      }
+
+      getTopRated() {
+        return fetch(`${this._url}top_rated?api_key=${this._token}`, {
+          headers: {         
+            "Content-Type": "application/json",
+          },
+        }).then((response) => response.json());
+      }
+
+      getUpcoming() {
+        return fetch(`${this._url}upcoming?api_key=${this._token}`, {
           headers: {         
             "Content-Type": "application/json",
           },

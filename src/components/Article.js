@@ -1,6 +1,7 @@
 import React from "react";
 
 export default function Article({
+  title,
   name,
   link,
   handleClick,
@@ -8,11 +9,11 @@ export default function Article({
 }) {
   return (
     <>
-      <article className="article">
-          <h2 className="article__title">{name}</h2>
-        
+      <article className="article">  
+          <h2 className="article__title">{title}</h2> 
+          
           <img
-          onClick={() => {
+          onClick={() => {                //tengo que configurar title para que me traiga el título de la ruta
             handleClick(name, link);      //esto seria el popup (zoom)
           }}
             className="article__picture"
