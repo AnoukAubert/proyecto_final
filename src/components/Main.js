@@ -1,16 +1,15 @@
 import React from "react";
-import Galery from "./Galery.js";
 
 export default function Main({cards, handleZoomClick}) {
   return (
     <>
     <div>
-      <main className="content"> 
-        
+      <main className="main"> 
 
-        <Galery cards={cards} handleZoomClick={handleZoomClick} />
-
-
+        <button className="main__button">Ahora en Cines</button>
+        <button className="main__button">Popular</button>
+        <button className="main__button">Los más Valorados</button>
+        <button className="main__button">Próximamente</button>
         
       </main>
     </div>

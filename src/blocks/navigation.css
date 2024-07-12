@@ -8,6 +8,12 @@
     background-image: linear-gradient(to top, #9795f0 0%, #fbc8d4 100%);
     z-index: 100; 
   }
+
+  @media screen and (min-width: 0px) and (max-width: 768px) {
+    .navigation {
+      height: auto;
+    }
+  }
   
   .navigation__list {
     display: flex;
@@ -24,13 +30,13 @@
   
   .navigation__link {
     text-decoration: none;
-    color: #fff; /* Color del texto */
+    color: #fff; 
     font-weight: bold;
-    transition: color 0.3s ease; /* Efecto de transición al pasar el ratón */
+    transition: color 0.3s ease; 
   }
   
   .navigation__link:hover {
-    color: #ff9900; /* Cambia el color al pasar el ratón */
+    color: #ff9900; 
   }
   
   @media screen and (min-width: 0px) and (max-width: 768px) {

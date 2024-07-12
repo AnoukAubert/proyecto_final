@@ -21,3 +21,5 @@ code {
 @import url(./Inter/inter.css);
 @import url(./blocks/movie.css);
 @import url(./blocks/navigation.css);
+@import url(./blocks/main.css);
+@import url(./blocks/preloader.css);

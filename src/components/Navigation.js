@@ -1,48 +1,38 @@
 import React from "react";
-import { Route, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export default function Navigation({}) {
-  const [linknContent, setLinkContent] = React.useState();
-  const getApiValues = {};
-  const handleSubmit = (evt) => { 
-    evt.preventDefault();
-    handleSubmit(getApiValues()).finally(() => {
-      setLinkContent();
-     });
-   }
-  return (
+   return (
     <>
-    <Route>
       <nav className="navigation">
         <ul className="navigation__list">
           <li className="navigation__item">
-            <Link to="/" className="navigation__link" handleSubmit={linknContent}>
+            <Link to="/" className="navigation__link">
               Inicio
             </Link>
           </li>
           <li className="navigation__item">
-            <Link to="/now-playing" className="navigation__link" handleSubmit={linknContent}>
+            <Link to="/now-playing" className="navigation__link">
               Ahora en Cines
             </Link>
           </li>
           <li className="navigation__item">
-            <Link to="/popular" className="navigation__link" handleSubmit={linknContent}>
+            <Link to="/popular" className="navigation__link">
               Popular
             </Link>
           </li>
           <li className="navigation__item">
-            <Link to="/top-rated" className="navigation__link" handleSubmit={linknContent}>
+            <Link to="/top-rated" className="navigation__link">
               Los Más Valorados
             </Link>
           </li>
           <li className="navigation__item">
-            <Link to="/upcoming" className="navigation__link" handleSubmit={linknContent}>
+            <Link to="/upcoming" className="navigation__link">
               Proximamente
             </Link>
           </li>
         </ul>
       </nav>
-      </Route>
     </>
   );
 }

@@ -14,7 +14,7 @@ export default function Header({}) {
           src={mainPic}
         />
         <h4 className="header__subtitle">
-          ¿No sabés qué mirar? Acá te podés encontrar con recomendaciones de peliculas de todos los géneros, animate a probar algo nuevo y disfruta de unas palomitas en tu sillón.
+          ¿No sabés qué mirar? Acá te podés encontrar con recomendaciones de peliculas de todos los géneros, animate a probar algo nuevo y disfruta de unas palomitas en tu sillón. ¿O por qué no? En el cine.
         </h4>
       </header>
     </>
