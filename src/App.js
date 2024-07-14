@@ -13,7 +13,7 @@ import Popular from "./components/Popular.js";
 
 function App() {
 
-  const [cards] = React.useState([]);
+  const [cards, setCards] = React.useState([]);
   const [popularCards, setPopularCards] = React.useState([]);
   const [nowPlayingCards, setNowPlayingCards] = React.useState([]);
   const [upcomingCards, setUpcomingCards] = React.useState([]);
@@ -24,7 +24,7 @@ function App() {
   React.useEffect(() => {
       //mandas llamar el api y en then guardas las tarjetas en setcards
       api.getPopular().then(data => {
-        setPopularCards(data.results)
+        setCards(data.results)
       })
       api.getNowPlaying().then(data => {
         setNowPlayingCards(data.results)
@@ -62,7 +62,7 @@ function App() {
     />
     </Route>
     {/* <Route path="/now-playing"><NowPlaying /></Route> */}
-    <Route path="/popular"><Popular /></Route>
+    <Route path="/popular"><Popular handleZoomClick={handleZoomClick} /></Route> 
     {/* <Route path="/top-rated"><TopRated /></Route>
     <Route path="/upcoming"><Upcoming /></Route> */}
     </Switch>
