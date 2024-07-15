@@ -1,3 +1,14 @@
+Proyecto Final: "TripleTem Movie Center"
+
+Este proyecto se creó con React App, JavaScript, CSS y HTML, la página trata de una plataforma donde se recomiendan películas para mirar tanto en casa como en el cine, se puede elegir entre lo que está en tendencia, lo más visto, los mejor valorados y lo que está por venir. 
+
+Las tecnologías utilizadas fueron Visual Code Studio, Google Search, Git Bash, Github, Webpack, React
+
+Enlace: https://anoukaubert.github.io/proyecto_final/
+
+También puede accederse mediante su terminal corriendo 'npm run start' o 'npm run dev' según corresponda desde la carpeta del proyecto.
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
