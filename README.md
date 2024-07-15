@@ -1,4 +1,4 @@
-Proyecto Final: "TripleTem Movie Center"
+Proyecto Final: "TripleTen Movie Center"
 
 Este proyecto se creó con React App, JavaScript, CSS y HTML, la página trata de una plataforma donde se recomiendan películas para mirar tanto en casa como en el cine, se puede elegir entre lo que está en tendencia, lo más visto, los mejor valorados y lo que está por venir. 
 
@@ -8,6 +8,8 @@ Enlace: https://anoukaubert.github.io/proyecto_final/
 
 También puede accederse mediante su terminal corriendo 'npm run start' o 'npm run dev' según corresponda desde la carpeta del proyecto.
 
+Desde el inicio del proyecto se realizaron varios commits por consultas a los tutores por el funcionamiento de las rutas, que fueron mi punto débil desde el inicio. Se realizaron cambios simpre con respecto a ello, luego de varias consultas en las que no se podía solucionar el problema por el cual no funcionaban correctamente, dimos con la falla, que radicaba en que al la ruta principal había omitido poner "exact path" por lo que nunca tomaba en cuenta las demás rutas. Una vez encontrado el error se procedió a finalizar con el código de las demás rutas involucradas, puesto que las pruebas iniciales solo se hacían con la ruta "/popular" y finalmente la puesta en funcionamiento del Preloader.
+Principalmente, la idea no era realizar tantos commits, solo que los tutores lo fueron solicitando para revisar los errores, finalmente se realiza Branch y Pull Request por haber omitido la revisión del primer párrafo antes de la entrega del proyecto en sí.
 
 # Getting Started with Create React App
 
