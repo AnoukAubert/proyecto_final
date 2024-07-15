@@ -1,15 +1,16 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-export default function Main({cards, handleZoomClick}) {
+export default function Main({}) {
   return (
     <>
     <div>
       <main className="main"> 
 
-        <button className="main__button">Ahora en Cines</button>
-        <button className="main__button">Popular</button>
-        <button className="main__button">Los más Valorados</button>
-        <button className="main__button">Próximamente</button>
+        <Link to="/now-playing" className="main__button">Ahora en Cines</Link>
+        <Link to="/popular" className="main__button">Popular</Link>
+        <Link to="/top-rated" className="main__button">Los más Valorados</Link>
+        <Link to="/upcoming" className="main__button">Próximamente</Link>
         
       </main>
     </div>
