@@ -24,23 +24,13 @@
   max-width: 270px;
   top: 34px;
   width: 7%;
-  left: 505px;
   border-radius: 10%;
 }
-@media screen and (min-width:768px) and (max-width: 1280px) {
-  .header__logo {
-    left: 249px;
-  }
-}
-@media screen and (min-width:320px) and (max-width: 768px) {
-  .header__logo {
-    left: 60px;
-  }
-}
+
 @media screen and (max-width: 320px) {
   .header__logo {
-    width: 75%;
-    left: 60px;
+    width: 20%;
+
   }
 }
 .header__main-ilustration {

@@ -45,7 +45,7 @@
   pointer-events: none;
 }
 .zoom__close-btn {
-  margin-left: 87.5%;
+  margin: 30px auto -50px 30%;
   border: none;
   background: url(../../src/images/Closecon.png) center no-repeat; /*cargar imagen*/
   cursor: pointer;
@@ -55,11 +55,11 @@
   transition: 0.3s;
 }
 .zoom__image {
-  margin-left: 12.5%;
-  max-height: 75%;
-  max-width: 75%;
+  margin: auto;
+  max-height: 100%;
+  max-width: 100%;
 }
-.zoom__title {
+.zoom__image-title {
   width: 291px;
   color: #fff;
   text-shadow: black;
@@ -67,15 +67,10 @@
   font-size: 24px;
   font-family: Inter;
   line-height: 29px;
-  margin-left: 15%;
+  margin: auto;
   font-style: normal;
   font-weight: 900;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
-}
-@media screen and (min-width: 0px) and (max-width: 768px) {
-  .zoom__title {
-    margin-left: 10%;
-  }
 }
