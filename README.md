@@ -1,81 +1,30 @@
-Proyecto Final: "TripleTem Movie Center"
+### TripleTen Movie Center
 
-Este proyecto se creó con React App, JavaScript, CSS y HTML, la página trata de una plataforma donde se recomiendan películas para mirar tanto en casa como en el cine, se puede elegir entre lo que está en tendencia, lo más visto, los mejor valorados y lo que está por venir. 
-
-Las tecnologías utilizadas fueron Visual Code Studio, Google Search, Git Bash, Github, Webpack, React
-
-Enlace: https://anoukaubert.github.io/proyecto_final/
-
-También puede accederse mediante su terminal corriendo 'npm run start' o 'npm run dev' según corresponda desde la carpeta del proyecto.
+Este proyecto se creó utilizando React, JavaScript, CSS y HTML. TripleTen Movie Center es una plataforma que recomienda películas para ver tanto en casa como en el cine. Puedes explorar las tendencias actuales, las películas más vistas, las mejor valoradas y las próximas a estrenarse.
 
 
-# Getting Started with Create React App
+### Tecnologías utilizadas
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[![My Skills](https://skillicons.dev/icons?i=js,html,css,git,github,nodejs,ps,npm,postman,react,vscode,webpack)](https://skillicons.dev)
 
-## Available Scripts
+   - Visual Studio Code: El entorno de desarrollo.
+   - Google Search: Para obtener información relevante.
+   - Git Bash y GitHub: Para el control de versiones y colaboración.
+   - Webpack: Para la construcción y empaquetado del proyecto.
+   - React: El marco de trabajo para crear la interfaz de usuario.
 
-In the project directory, you can run:
+### Enlace al proyecto
 
-### `npm start`
+Puedes visitar el sitio aquí: TripleTen Movie Center
+Ejecución desde la terminal
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Para acceder al proyecto desde la terminal, ejecuta los siguientes comandos desde la carpeta del proyecto:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+    npm run start: Inicia la aplicación.
+    npm run dev: Inicia la aplicación en modo de desarrollo.
 
-### `npm test`
+### Desarrollo del proyecto
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Desde el inicio del proyecto, se realizaron varios commits debido a consultas con los tutores sobre el funcionamiento de las rutas. Las rutas fueron un punto débil desde el principio. Después de varias consultas, identificamos el problema: la ruta principal no tenía la propiedad “exact path”, lo que impedía que las demás rutas funcionaran correctamente. Una vez encontrado el error, finalizamos el código de las demás rutas. Inicialmente, las pruebas se realizaron solo con la ruta “/popular”, y finalmente logramos poner en funcionamiento el Preloader.
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Luego de una pequeña reseña proporcionada por los tutores, se encontraron unos pequeños errores de responsabilidad y se mejoraron las tipografías, añadiendo colores y sombras.

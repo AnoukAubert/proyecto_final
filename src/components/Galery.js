@@ -2,7 +2,7 @@ import React from "react";
 import { Switch, Route } from "react-router-dom";
 import Card from "../components/Card";
 
-export default function Galery({handleZoomClick, cards}) {
+export default function Galery({handleZoomClick, cards, title}) {
   return (
   <>
   <section className="galery">
@@ -11,6 +11,7 @@ export default function Galery({handleZoomClick, cards}) {
               <>
               <Switch>
                 <Route>
+                  
               <Card
                 key={index}
                 handleClick={handleZoomClick}

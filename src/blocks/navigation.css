@@ -30,13 +30,14 @@
   
   .navigation__link {
     text-decoration: none;
+    text-shadow: 5px black;
     color: #fff; 
     font-weight: bold;
     transition: color 0.3s ease; 
   }
   
   .navigation__link:hover {
-    color: #ff9900; 
+    color: purple; 
   }
   
   @media screen and (min-width: 0px) and (max-width: 768px) {
